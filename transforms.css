@@ -1,0 +1,113 @@
+.book{
+  height: 200px;
+  width: 100px;
+  margin-left: 100px;
+  position: relative;
+  perspective: 600px;
+  background-color: #f88;
+  transform-style: preserve-3d;
+}
+
+.page{
+  transition: ease-out 1s;
+  width: 100%;
+  height: 100%;
+  background-color: #f00;
+  position: absolute;
+  transform-origin: left top;
+  border-right: 0px solid;
+}
+
+.page1{
+  background-color: #f00;
+  border-color: #900;
+  transition-delay: 0ms;
+}
+
+.page2{
+  background-color: #ff0;
+  border-color: #990;
+  transition-delay: 100ms;
+}
+
+.page3{
+  background-color: #f0f;
+  border-color: #909;
+  transition-delay: 200ms;
+}
+
+.book:hover .page{
+  border-right-width: 5px;
+}
+
+.book:hover .page1{
+  transform: rotateY(-140deg);
+  transition-delay: 200ms;
+}
+
+.book:hover .page2{
+  transform: rotateY(-150deg);
+  transition-delay: 100ms;
+}
+
+.book:hover .page3{
+  transform: rotateY(-160deg);
+  transition-delay: 0ms;
+}
+
+/*3d animation*/
+
+.block_scene{
+  height: 200px;
+  width: 100px;
+  margin-left: 100px;
+  position: relative;
+  perspective: 600px;
+  background-color: #f88;
+  transform-style: preserve-3d;
+}
+
+.block{
+  width: 100%;
+  height: 100%;
+  background-color: #f00;
+  position: absolute;
+  transform-origin: left center;
+  border-right: 0px solid;
+}
+
+@keyframes ani3d {
+  0%{
+    transform: rotateZ(0deg) rotateX(100deg) rotateY(20deg);
+
+  }
+  100%{
+    transform: rotateZ(calc(360deg * 4)) rotateX(460deg) rotateY(20deg);
+  }
+}
+@keyframes ani3d1 {
+  0%{
+    transform: rotateZ(0deg) rotateX(100deg) rotateY(70deg);
+
+  }
+  100%{
+    transform: rotateZ(calc(360deg * 2)) rotateX(460deg) rotateY(70deg);
+  }
+}
+
+.block1{
+  background-color: #f00;
+  transition-delay: 0ms;
+  animation: ani3d 15s infinite linear;
+}
+
+.block2{
+  background-color: #ff0;
+  transition-delay: 100ms;
+  animation: ani3d1 15s infinite linear;
+}
+
+.block3{
+  background-color: #f0f;
+  transition-delay: 200ms;
+}

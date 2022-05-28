@@ -1,0 +1,98 @@
+.world_wrapper{
+  position: relative;
+}
+
+.player{  
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #00f;
+}
+
+.track{ 
+  width: 100%;
+  overflow: hidden;
+}
+
+.obstacles{
+  display: flex;
+}
+
+.obstacle{
+  left: calc(-350px * 4);
+  flex-shrink: 0;
+  margin-left: 300px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.destroy_effect{
+  /*transform: scale(1);*/
+  width: 100%;
+  height: 100%;
+  background-color: #f00;
+  position: relative;
+
+}
+
+#ba:checked ~ .world_wrapper .obstacle{
+   animation: an_all 4s linear;
+}
+
+#ba:checked ~ .world_wrapper .destroy_effect{
+  animation: an1 400ms linear forwards; 
+}
+
+#ba:checked ~ .world_wrapper .ob1{
+  animation-delay: 0.6s;
+}
+#ba:checked ~ .world_wrapper .ob2{
+  animation-delay: 1.6s;
+}
+#ba:checked ~ .world_wrapper .ob3{
+  animation-delay: 2.6s;
+}
+#ba:checked ~ .world_wrapper .ob4{
+  animation-delay: 3.6s;
+}
+
+@keyframes an1 {
+  0%{
+    transform: scale(1);
+  }
+  20%{
+    transform: translate(20px) scale(1.2) ;
+  }
+  90%{
+    transform: translate(90px) scale(0) ;
+  }
+  100%{
+    transform: translate(100px) scale(0) ;
+  }
+}
+
+
+@keyframes an_all {
+  0%{
+    left: 0px;
+  }
+  100%{
+    left: calc(-350px * 4);
+  }
+}
+
+.lbba{
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.lbba::after{
+  content: 'play';
+}
+
+#ba:checked ~ .world_wrapper .lbba::after{
+  content: 'stop';
+}

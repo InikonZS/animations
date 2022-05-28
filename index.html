@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./bigAnimation.css">
+  <link rel="stylesheet" href="./transforms.css">
+</head>
+<body>
+  <div>
+    <h2>Simple demo</h2>
+    <input type="checkbox" id="c1">
+    <div class="view">
+      <label for="c1">click</label>
+      <div class="c1">result</div>
+    </div>
+  </div>
+  <div>
+    <h2>And demo</h2>
+    <input type="checkbox" id="d1">
+    <input type="checkbox" id="d2">
+    <div class="view">
+      <label for="d1" class="andA">A</label>
+      <label for="d2" class="andB">B</label>
+      <div class="andResult">result</div>
+    </div>
+  </div>
+  <div>
+    <h2>Or demo</h2>
+    <input type="checkbox" id="e1">
+    <input type="checkbox" id="e2">
+    <div class="view">
+      <label for="e1" class="orA">A</label>
+      <label for="e2" class="orB">B</label>
+      <div class="orResult">result</div>
+    </div>
+  </div>
+  <div>
+    <h2>Xor demo</h2>
+    <input type="checkbox" id="f1">
+    <input type="checkbox" id="f2">
+    <div class="view">
+      <label for="f1" class="xorA">A</label>
+      <label for="f2" class="xorB">B</label>
+      <div class="xorResult">result</div>
+    </div>
+  </div>
+  <div>
+    <h2>Radio demo</h2>
+    <input type="radio" id="g1" name="a">
+    <input type="radio" id="g2" name="a">
+    <input type="radio" id="g3" name="a">
+    <input type="radio" id="g4" name="a">
+    <div class="view">
+      <label for="g1" class="g1">1</label>
+      <label for="g2" class="g2">2</label>
+      <label for="g3" class="g3">3</label>
+      <label for="g4" class="g4">4</label>
+    </div>
+  </div>
+  <div>
+    <h2>Slider demo</h2>
+    <input type="radio" id="h1" name="b">
+    <input type="radio" id="h2" name="b">
+    <input type="radio" id="h3" name="b">
+    <input type="radio" id="h4" name="b">
+    <div class="view">
+      <div class="arrowContainer">
+        <span>left</span>
+        <label for="h1" class="arrow lh1"></label>
+        <label for="h2" class="arrow lh2"></label>
+        <label for="h3" class="arrow lh3"></label>
+        <label for="h4" class="arrow lh4"></label>
+      </div>
+      <div>
+        <label for="h1" class="h1">1</label>
+        <label for="h2" class="h2">2</label>
+        <label for="h3" class="h3">3</label>
+        <label for="h4" class="h4">4</label>
+      </div>
+      <div class="arrowContainer">
+        <span>right</span>
+        <label for="h1" class="arrow rh1"></label>
+        <label for="h2" class="arrow rh2"></label>
+        <label for="h3" class="arrow rh3"></label>
+        <label for="h4" class="arrow rh4"></label>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2>No absolute</h2>
+    <div>
+      <div class="zero">
+        <label class="arrowA">left</label>
+      </div>
+      <div class="zero">
+        <label class="arrowA">left</label>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2>Infinity animation</h2>
+    <div class="animation_wrapper">
+      <div class="text_wrapper">
+        <div class="text_item">Animation</div>
+        <div class="text_item">Animation</div>
+        <div class="text_item">Animation</div>
+        <div class="text_item">Animation</div>
+        <div class="text_item">Animation</div>
+        <div class="text_item">Animation</div>
+        <div class="text_item">Animation</div>
+        <div class="text_item">Animation</div>
+        <div class="text_item">Animation</div>
+        <div class="text_item">Animation</div>
+        <div class="text_item">Animation</div>
+      </div>  
+    </div>  
+  </div>
+  <div>
+    <h2>Animation demo2</h2>
+    <div class="animation2_wrapper">
+      <div class="animated_sizer">
+        <div class="animated_box"></div>
+      </div>
+    </div>  
+  </div>
+  <div>
+    <h2>Delay items</h2>
+    <div class="delay_wrapper">
+      <div class="delay_item di0">delay item</div>
+      <div class="delay_item di1">delay item</div>
+      <div class="delay_item di2">delay item</div>
+      <div class="delay_item di3">delay item</div>
+    </div>
+  </div>
+  <div>
+    <h2>Big animation</h2>
+    <input type="checkbox" id="ba">
+    <div class="world_wrapper">
+      <div class="player">
+        <label class="lbba" for="ba"></label>
+      </div>
+      <div class="track">
+        <div class="obstacles">
+          <div class="obstacle">
+            <div class="destroy_effect ob1"></div>
+          </div>
+          <div class="obstacle">
+            <div class="destroy_effect ob2"></div>
+          </div>
+          <div class="obstacle">
+            <div class="destroy_effect ob3"></div>
+          </div>
+          <div class="obstacle">
+            <div class="destroy_effect ob4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2>Transforms</h2>
+    <div class ="book">
+      <div class="page page1"></div>
+      <div class="page page2"></div>
+      <div class="page page3"></div>
+    </div>
+  </div>
+
+  <div>
+    <h2>3d animation</h2>
+    <div class="block_scene">
+      <div class="block block1"></div>
+      <div class="block block2"></div>
+      <div class="block block3"></div>
+    </div>
+  </div>
+</body>
+</html>
